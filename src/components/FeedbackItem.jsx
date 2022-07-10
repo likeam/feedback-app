@@ -2,8 +2,8 @@
 import {useStae} from 'react'
 
 function FeedbackItem() {
-    const rating = 7;
-    const text = 'This is an example of Feedback item';
+    const [rating, serRating] = useState(7)
+    const [text, setText] = useStae('This is an example of Feedback item')
 
     return (
         <div className="card">
